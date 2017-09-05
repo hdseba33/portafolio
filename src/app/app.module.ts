@@ -5,6 +5,7 @@ import {HttpModule} from '@angular/http';
 import {APP_ROUTING} from './app.routes';
 //services
 import {InformacionService} from './services/informacion.service';
+import {ProductosService} from './services/productos.service';
 //componentes
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,7 +29,8 @@ import { PortfolioItemComponent } from './components/portfolio-item/portfolio-it
     APP_ROUTING
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
