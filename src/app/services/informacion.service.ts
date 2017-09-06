@@ -25,7 +25,6 @@ export class InformacionService {
       data=>{
         this.cargadosobrenosotros=true;
         this.equipo=data.json();
-        console.log(this.equipo);
       }
     );
   }
