@@ -9,7 +9,7 @@ import {ProductosService} from '../../services/productos.service';
 export class BuscarComponent implements OnInit {
  termino:string;
  productofiltrado:any[]=[];
-  constructor(private route:ActivatedRoute,private ps:ProductosService) {
+  constructor(private route:ActivatedRoute,public ps:ProductosService) {
     this.buscarProducto();
   }
 
